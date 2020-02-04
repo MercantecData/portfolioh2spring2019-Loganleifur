@@ -40,6 +40,30 @@ namespace Dictionary
             fictionary.Add(08, false);
             fictionary.Add(09, true);
             fictionary.Add(10, true);
+
+            //Opgave 3: Dictionary 
+
+            Dictionary<Person, bool> isDead = new Dictionary<Person, bool>();
+
+            Person test = new Person();
+            test.age = 14;
+            test.name = "Bazinga";
+            
+
+            isDead.Add(test, false);
+
+            isDead[test] = true;
+            Console.WriteLine(isDead[test]);
+            Console.ReadLine();
+
+            
         }
+    }
+    public class Person
+    {
+       public string name;
+       public int age;
+
+       
     }
 }
