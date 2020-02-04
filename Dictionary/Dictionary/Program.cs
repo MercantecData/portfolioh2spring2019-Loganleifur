@@ -10,6 +10,7 @@ namespace Dictionary
     {
         static void Main(string[] args)
         {
+            //Opgave 1: Dictionary
             Dictionary<string, int> dictionary = new Dictionary<string, int>();
 
             dictionary.Add("Freeman", 17);
@@ -23,8 +24,22 @@ namespace Dictionary
             dictionary.Add("Dragonator", 10000);
             dictionary.Add("Megaman", 2);
             dictionary.Add("Gamer", 1337);
-            Console.WriteLine(dictionary.Values);
-            Console.ReadLine();
+
+            
+            //Opgave 2: Dictionary 
+
+            Dictionary<float, bool> fictionary = new Dictionary<float, bool>();
+
+            fictionary.Add(01, true);
+            fictionary.Add(02, false);
+            fictionary.Add(03, false);
+            fictionary.Add(04, false);
+            fictionary.Add(05, true);
+            fictionary.Add(06, true);
+            fictionary.Add(07, true);
+            fictionary.Add(08, false);
+            fictionary.Add(09, true);
+            fictionary.Add(10, true);
         }
     }
 }
