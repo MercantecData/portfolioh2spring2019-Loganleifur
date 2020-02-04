@@ -49,10 +49,13 @@ namespace Dictionary
             test.age = 14;
             test.name = "Bazinga";
             
-
+            //det her gør den false
             isDead.Add(test, false);
 
+            //det her gør den true
             isDead[test] = true;
+
+            //ved ikke hvilken en er mere rigtig 
             Console.WriteLine(isDead[test]);
             Console.ReadLine();
 
