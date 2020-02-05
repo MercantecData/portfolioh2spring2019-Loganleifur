@@ -10,41 +10,31 @@ namespace Delegates
 
     class Panic
     {
-        public delegate void TomDelegate();
+        public delegate void Opgave1();
+        public delegate float Opgave2();
+        public delegate void Opgave3(int a, string b, int c);
+        
 
-        public static void virk()
-        {
-            Console.WriteLine("I WORK");
-        }
+        
 
         public static void Main()
         {
 
-            TomDelegate Tom = virk;
+            Opgave1 Tom = () => Console.WriteLine("Work time");
 
             Tom();
+
+            Opgave2 vibe = () => 14.2f;
+            
+            Console.WriteLine(vibe());
+
+            Opgave3 three = (a, b, c) => Console.WriteLine("oh yeah big brain time");
+
+            three(14,"ooh",12);
 
             Console.ReadKey();
         }
 
     }
 
-//    class second
-//    {
-//        public delegate float aDel();
-//
-//        public static void Chain()
-//        {
-//            Console.WriteLine("Keychain");
-//            return;
-//        }
-//        public static void Main()
-//        {
-//            aDel Del = Chain;
-//
-//            aDel();
-//
-//
-//        }
-//    } 
 }
