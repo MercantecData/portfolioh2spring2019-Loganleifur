@@ -34,7 +34,7 @@ namespace Delegates
 
             Console.ReadKey();
         }
-
+ 
     }
 
 }

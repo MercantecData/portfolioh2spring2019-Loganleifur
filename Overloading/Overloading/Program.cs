@@ -11,16 +11,25 @@ namespace Overloading
         static void Main(string[] args)
         {
             
-            Console.WriteLine(quickMaths.Add("12","12"));
-            Console.ReadKey();
+            inting bonus = quickMaths.Add;
+            floating bonus1 = quickMaths.Add;
+            stringing bonus2 = quickMaths.Add;
+
+            Console.WriteLine(bonus(12, 12));
+            Console.WriteLine(bonus1(12.9f, 12.3f));
+            Console.WriteLine(bonus2("19", "50"));
         }
     }
 
     //Opgave 1: Overload
 
+    public delegate int inting(int a, int b);
+    public delegate float floating(float a, float b);
+    public delegate string stringing(string a, string b);
+
     class quickMaths
     {
-    
+        
         public static int Add(int a, int b)
         {
             return a + b;
