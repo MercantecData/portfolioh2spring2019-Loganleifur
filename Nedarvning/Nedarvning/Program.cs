@@ -11,6 +11,7 @@ namespace Nedarvning
         static void Main(string[] args)
         {
 
+            
         }
     }
 
@@ -59,7 +60,7 @@ namespace Nedarvning
         public string socket;
     }
 
-    class Console
+    class Console : Computer
     {
         public string SkærmSocket;
         public string lanSocket;
@@ -77,10 +78,10 @@ namespace Nedarvning
 
     }
 
-    class bærbar
+    class Bærbar : Computer
     {
         public Skærm indbyggetSkærm;
-        public touchPad touchpad;
+        public TouchPad touchpad;
         public Charger charger;
         public string lanSocket;
 
@@ -90,7 +91,7 @@ namespace Nedarvning
         }
     }
 
-    class mobiltelefon
+    class Mobiltelefon : Computer
     {
         public Skærm indbyggetSkærm;
         public Charger charger;
@@ -107,7 +108,7 @@ namespace Nedarvning
         }
     }
 
-    class Bil
+    class Bil : Computer
     {
         public int hjul;
         public string motor;
@@ -119,7 +120,7 @@ namespace Nedarvning
         }
     }
 
-    class stationær
+    class Stationær : Computer
     {
         public Kabinet kabinet;
         public string skærmSocket;
@@ -137,7 +138,7 @@ namespace Nedarvning
 
     }
 
-    class Controller
+    class Controller 
     {
         public string label;
 
@@ -158,7 +159,7 @@ namespace Nedarvning
     }
         
 
-    class touchPad
+    class TouchPad : Bærbar
     {
         public string label;
         public int size;
@@ -170,7 +171,7 @@ namespace Nedarvning
         }
     }
 
-    class Cover
+    class Cover 
     {
         public string material;
         public string label;
@@ -182,7 +183,7 @@ namespace Nedarvning
         }
     }
 
-    class Skærm
+    class Skærm 
     {
         public string label;
         public string size;
